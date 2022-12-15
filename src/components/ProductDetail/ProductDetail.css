@@ -1,0 +1,28 @@
+.laptop-container{
+    display: flex;
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+.laptop-description{
+    margin-top: 50px;
+    margin-left: 20px;
+    text-align: justify;
+}
+.laptop-description h1{
+    color: orange;
+}
+.laptop-container img{
+    height: 300px;
+}
+.live-demo-btn{
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(224, 189, 224);
+    padding: 13px 20px 13px 20px;
+    color: purple;
+    border-radius: 5px;
+}
+.live-demo-btn:hover{
+    background-color: orange;
+    color: white;
+}
