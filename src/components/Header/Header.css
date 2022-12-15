@@ -1,0 +1,10 @@
+nav a{
+    margin-left: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-name{
+    color: tomato;
+    font-family: Sofia;
+}
