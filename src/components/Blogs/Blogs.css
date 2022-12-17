@@ -1,0 +1,15 @@
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    text-align: justify;
+    margin-top: 30px;
+    padding: 15px;
+    
+    
+}
+.question{
+   
+    padding: 15px;
+    border-radius: 10px;
+}
