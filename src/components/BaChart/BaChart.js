@@ -1,10 +1,8 @@
-
 import React from 'react';
-import { Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
-import BaChart from '../BaChart/BaChart';
-import './DashBoard.css';
+import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 
-const DashBoard = () => {
+
+const BaChart = () => {
     const data = [
         {
             "month": "Mar",
@@ -43,24 +41,21 @@ const DashBoard = () => {
             "revenue": 61000
         },
     ];
-
     return (
-        <div className='chart'>
-            <LineChart width={600} height={400} data={data}>
-                <Line type="monotone" dataKey={'investment'} stroke="#8884d8"></Line>
-                <Line type="monotone" dataKey={'sales'} stroke="#82ca9d"></Line>
-                <Line type="monotone" dataKey={'revenue'} stroke="#82ca9d"></Line>
-                <XAxis dataKey={'month'}></XAxis>
-                <XAxis dataKey={'sales'}></XAxis>
-                <XAxis dataKey={'revenue'}></XAxis>
-                <Legend verticalAlign="top" height={36}/>
-                <Tooltip></Tooltip>
-                <YAxis></YAxis>
-            </LineChart>
-            
-            <BaChart></BaChart>
+        <div>
+            <BarChart width={730} height={430} data={data}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey={'month'} />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="month" fill="#8884d8" />
+            <Bar dataKey="investment" fill="#82ca9d" />
+            <Bar dataKey="revenue" fill="#8884d8" />
+            <Bar dataKey="sales" fill="#82ca9d" />
+            </BarChart>
         </div>
     );
 };
 
-export default DashBoard;
+export default BaChart;
