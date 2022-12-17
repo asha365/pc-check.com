@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import CustomLink from '../CustomLink/CustomLink';
+import logo from '../../logo/logo.jpg';
 import './Header.css';
 
 const Header = () => {
@@ -12,8 +13,7 @@ const Header = () => {
             <Navbar bg="light" expand="lg">
                 <Container fluid>
                 <Navbar.Brand  href="#">
-                    <h4 style={{fontFamily: "Sofia,  sans-serif"}} className='logo-name'>PC CHECK</h4>
-                {/* <img src='/public/images/laptop-logo.jpg'></img> */}
+                    <img src={logo} alt="" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
