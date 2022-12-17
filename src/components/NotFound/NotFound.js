@@ -1,11 +1,17 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import logo from '../../logo/error.jpg';
 import './NotFound.css';
 
 const NotFound = () => {
     return (
         <div className='not-found'>
-            <h1>This page not available</h1>
-            <h3>404</h3>
+            <img src={logo} alt=''/><br></br>
+            <NavLink to='/'>
+                <Button>Go Back to Home</Button>
+            </NavLink>
+            
         </div>
     );
 };

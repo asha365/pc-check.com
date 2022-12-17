@@ -59,6 +59,7 @@ const DashBoard = () => {
             </LineChart>
             
             <BaChart></BaChart>
+            
         </div>
     );
 };

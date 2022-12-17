@@ -54,6 +54,7 @@ const BaChart = () => {
             <Bar dataKey="revenue" fill="#8884d8" />
             <Bar dataKey="sales" fill="#82ca9d" />
             </BarChart>
+            
         </div>
     );
 };
