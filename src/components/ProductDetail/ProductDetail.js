@@ -1,11 +1,23 @@
-import React from 'react';
-import useCustomers from '../../hooks/useCustomers';
+import React, { useEffect, useState } from 'react';
+// import useCustomers from '../../hooks/useCustomers';
 import Cart from '../Cart/Cart';
 import './ProductDetail.css';
 
 const ProductDetail = (props) => {
     const {name, picture, description} = props.product;
-    const [customerReviews, setCustomerReviews] = useCustomers();
+
+    const [views, setViews] = useState([]);
+    const [visible, setVisible] = useState(3);
+
+    useEffect(() =>{
+        fetch('customers.json')
+        .then(res => res.json())
+        .then(data => setViews(data))
+    }, [])
+
+    const seeAllReview = () =>{
+        setVisible((preValue) => preValue + 3)
+    }
     return (
         <div>
         <div className='laptop-container'>
@@ -23,16 +35,20 @@ const ProductDetail = (props) => {
 
 
         <section className='all-review'>
-        <h1>Customer Reviews (3)</h1>
+        <h1>Customer Reviews (6)</h1>
             <div className="cart-container">
                 
                 {
-                    customerReviews.map(customerReview => <Cart
-                    key={customerReview.id}
-                    customerReview={customerReview}
+                    views.slice(0, visible).map(view => <Cart
+                    key={view.id}
+                    view={view}
                     ></Cart>)
                 }
             </div>
+            
+            <button className='see-all-btn' onClick={seeAllReview}>See All Reviews</button>
+            
+            
         </section>
         </div>
 

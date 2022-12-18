@@ -2,7 +2,7 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
-    const {name, picture,  describe, rating} = props.customerReview;
+    const {name, picture,  describe, rating} = props.view;
     return (
         <div className='cart-detail-container'>
                 <img src={picture} alt="" />
