@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# pc-check.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [pc-check.com](https://pc-check-ccf4dd.netlify.app/).
 
 ## Available Scripts
 
