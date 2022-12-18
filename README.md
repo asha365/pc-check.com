@@ -4,8 +4,11 @@ This project was bootstrapped with [pc-check.com](https://pc-check-ccf4dd.netlif
 
 # Project Summary
 - Project name pc-check.com. Create a heading component here use routes from react-router-dom and include BrowserRouter inside the index.js for routing my website. And here use custom link.
+
 - Create a json file for review related data collect. This project uses custom hooks and use fetch api.
+
 - First fall show 3 review card and add see all review button click this button show all data. Create a Review component here show all review data.Create a dashboard component here create bar chart and line chart import from rechart. 
+
 - Create blogs component then here include 3 questions show 2 column wise. Then create not found component if not matched any component then go to the not found component here include simple image and include a simple button this button uses NavLink from react-router-dom.      
 
 In the project directory, you can run:
